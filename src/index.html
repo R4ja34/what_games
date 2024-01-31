@@ -6,9 +6,16 @@
   <link rel="stylesheet" href="/dist/bundle.css">
   <title>WhatGames</title>
 </head>
-<body>
-  <h1>Hello World</h1>
-  
-  <script type="module" src="/dist/bundle.js"></script>
-</body>
+  <body>
+    <div class="headerContent">
+      <h1>WhatGames</h1>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Rechercher un jeu...">
+        <button type="submit">Rechercher</button>
+      </form>
+    </div>
+    <section id="pageContent">Choisissez un lien</section>
+    
+    <script type="module" src="/dist/bundle.js"></script>
+  </body>
 </html>
