@@ -37,7 +37,7 @@ const PageList = (argument = '') => {
     };
 
   const fetchList = (url, argument) => {
-  const finalURL = argument ? `${url}&search=${argument}` : url;
+  const finalURL = argument ? `${url}&search=${argument}&ordering=-released` : `${url}&dates=2024-01-01,2035-12-31`;
   fetch(finalURL)
     .then((response) => response.json())
     .then((responseData) => {
